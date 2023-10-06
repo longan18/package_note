@@ -23,7 +23,7 @@ services:
       - DB_HOST=db
       - DB_USERNAME=root
       - DB_PASS=root
-      - DB_NAME=Archive
+      - DB_NAME=
   
   db:
     image: mysql:8.0.29-oracle
@@ -32,7 +32,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql
     environment:
-      - MYSQL_DATABASE=Archive
+      - MYSQL_DATABASE=
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_ROOT_USER=root
       
